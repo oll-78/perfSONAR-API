@@ -9,7 +9,7 @@ my $local="perfsonar.vuztc.ru";
 my $arch="perfsonar.vuztc.ru";
 
 my $d = HTTP::Daemon->new(
-  LocalAddr => $src,
+  LocalAddr => $local,
   LocalPort => 9911,
 ) || die;
 print "Please contact me at: <URL:", $d->url, ">\n";
